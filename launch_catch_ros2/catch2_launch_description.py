@@ -12,13 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from launch import LaunchDescription
-from launch.launch_description_entity import LaunchDescriptionEntity
-from launch.actions import DeclareLaunchArgument
-
 from typing import Iterable
 from typing import Optional
 from typing import Text
+
+from launch import LaunchDescription
+from launch.actions import DeclareLaunchArgument
+from launch.frontend import Entity
+from launch.frontend import expose_action
+from launch.frontend import Parser
+from launch.launch_description_entity import LaunchDescriptionEntity
 
 
 class Catch2LaunchDescription(LaunchDescription):
@@ -37,13 +40,7 @@ class Catch2LaunchDescription(LaunchDescription):
     ) -> None:
 
         # Add launch arguments for Catch
-        initial_entities_appended = [
-            DeclareLaunchArgument(
-                name='result_file',
-                description='Catch 2 test result file output location',
-                default_value='/tmp/test_results.xml',
-            ),
-        ]
+        initial_entities_appended = [Catch2ResultFileLaunchArgument()]
 
         if initial_entities:
             initial_entities_appended += initial_entities
@@ -52,3 +49,26 @@ class Catch2LaunchDescription(LaunchDescription):
             initial_entities=initial_entities_appended,
             deprecated_reason=deprecated_reason
         )
+
+
+@expose_action('catch2_launch_file')
+class Catch2ResultFileLaunchArgument(DeclareLaunchArgument):
+    """Required result file argument, separated out for use in frontend launch files."""
+
+    def __init__(self):
+        super().__init__(
+            name='result_file',
+            description='Catch 2 test result file output location',
+            default_value='/tmp/test_results.xml',
+        )
+
+    @classmethod
+    def parse(
+        self,
+        entity: Entity,
+        parser: Parser
+    ):
+        # Not used, just here to make YAML launch files happy
+        entity.get_attr('description', optional=True)
+        kwargs = {}
+        return self, kwargs
