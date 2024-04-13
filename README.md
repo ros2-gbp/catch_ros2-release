@@ -1,3 +1,26 @@
+## catch_ros2 (iron) - 0.2.1-1
+
+The packages in the `catch_ros2` repository were released into the `iron` distro by running `/usr/bin/bloom-release --rosdistro iron catch_ros2` on `Sat, 13 Apr 2024 19:46:26 -0000`
+
+The `catch_ros2` package was released.
+
+Version of package(s) in repository `catch_ros2`:
+
+- upstream repository: https://github.com/ngmor/catch_ros2.git
+- release repository: https://github.com/ros2-gbp/catch_ros2-release.git
+- rosdistro version: `0.2.0-1`
+- old version: `0.2.0-1`
+- new version: `0.2.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## catch_ros2 (rolling) - 0.2.1-1
 
 The packages in the `catch_ros2` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling catch_ros2` on `Sat, 13 Apr 2024 19:44:08 -0000`
