@@ -1,0 +1,32 @@
+ros-kilted-catch-ros2 (0.2.2-1bookworm) bookworm; urgency=high
+
+  * Revert to Catch2 v3.4.0 to standardize with Ubuntu 24.04-provided Catch2 version
+  * Contributors: Nick Morales
+
+ -- Nick Morales <ngmorales97@gmail.com>  Wed, 03 Sep 2025 04:00:00 -0000
+
+ros-kilted-catch-ros2 (0.2.1-1bookworm) bookworm; urgency=high
+
+  * Updated to Catch2 v3.5.4
+  * Contributors: Nick Morales
+
+ -- Nick Morales <ngmorales97@gmail.com>  Sat, 13 Apr 2024 04:00:00 -0000
+
+ros-kilted-catch-ros2 (0.2.0-1bookworm) bookworm; urgency=high
+
+  * Updated to Catch2 v3.4.0
+  * Add launch_catch_ros2 Python package to the launch.frontend.launch_extension group
+  * Expose launch_catch_ros2 items to frontend (XML/YAML) launch files
+  * Update documentation
+  * Contributors: Nick Morales
+
+ -- Nick Morales <ngmorales97@gmail.com>  Fri, 20 Oct 2023 04:00:00 -0000
+
+ros-kilted-catch-ros2 (0.1.0-1bookworm) bookworm; urgency=high
+
+  * Initial Release
+  * Contributors: Nick Morales
+
+ -- Nick Morales <ngmorales97@gmail.com>  Fri, 23 Jun 2023 04:00:00 -0000
+
+
