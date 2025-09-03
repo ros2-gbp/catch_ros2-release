@@ -1,3 +1,26 @@
+## catch_ros2 (jazzy) - 0.2.2-1
+
+The packages in the `catch_ros2` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --ros-distro jazzy catch_ros2` on `Wed, 03 Sep 2025 12:44:01 -0000`
+
+The `catch_ros2` package was released.
+
+Version of package(s) in repository `catch_ros2`:
+
+- upstream repository: https://github.com/ngmor/catch_ros2.git
+- release repository: https://github.com/ros2-gbp/catch_ros2-release.git
+- rosdistro version: `0.2.1-2`
+- old version: `0.2.1-2`
+- new version: `0.2.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## catch_ros2 (kilted) - 0.2.2-1
 
 The packages in the `catch_ros2` repository were released into the `kilted` distro by running `/usr/bin/bloom-release --rosdistro kilted catch_ros2` on `Wed, 03 Sep 2025 12:31:20 -0000`
